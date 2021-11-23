@@ -1,0 +1,165 @@
+/*Guilherme Paiola de Castro Lima*/
+
+:root{
+	--vermelho: rgb(55,83,146);
+	--preto: #141414;
+} /*Variaveis */
+
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	box-sizing:border-box;
+}
+
+body{
+	background: var(--preto);
+	font-family: 'Arial';
+	color: white;
+	
+}
+ 
+header .container{
+	display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+	margin-left:5px;
+	color: var(--vermelho);
+	font-family:'Arial black', Times;
+	font-size: 40px;
+}
+
+.tardis{
+	transform: scale(0.5);
+}
+
+.tardis:hover{
+	transition: .3s ease all;
+	background: url("../img/BBCDoctorWhoTardis2021.1.png");
+}
+
+header nav a{
+	color: #AAA;
+	margin-right: 10px;
+	
+}
+
+header nav a:hover{
+	color:#fff;
+}/*quano o mouse passa pelo menu*/
+
+/*filme principal*/
+
+.filme-principal{
+	font-size:16px;
+	background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)),url("https://www.themoviedb.org/t/p/original/uCZrNmtriucxbv5luCeEWZhSawQ.jpg");
+	
+	height:400px;
+	background-size:cover;
+	
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:flex-start;
+	
+}
+
+.filme-principal .descricao{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	
+}
+.filme-principal .container{
+	width: 50%;
+	text-align: justify;
+}
+
+.titulo{
+	margin-top: 5%;
+	font-size: 40px;
+	font-family: 'Arial';
+}
+
+.botao{
+	background-color: rgba(0,0,0,.50);
+	border:none;
+	color: white;
+	padding:15px 30px;
+	margin-right: 12px;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.botao:hover{
+	background-color:white;
+	color: black;
+	
+}
+
+.botao i{
+	margin-right:8px;
+}
+
+.container, .botoes {
+	margin-left: 1%;
+}
+
+.item:hover{
+	box-shadow: 5px 4px 4px rgba(79, 79, 79, 0.25);
+	transition: .3s ease all;
+	padding: 4px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.title{
+	text-align:center;
+	margin: 3px;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+.carrosel-filmes{
+	margin-top: 5px;
+}
+
+
+@media screen and (max-width:700px){
+	header .container{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	.botao{
+		margin-top:5px;
+		width:300px;
+		
+	}
+}
+
+@media screen and (min-width:1000px;){
+	.filme-principal .container{
+		width:30%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
