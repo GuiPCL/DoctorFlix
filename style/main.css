@@ -134,6 +134,68 @@ header nav a:hover{
 	margin-top: 5px;
 }
 
+/*Guilherme Paiola de Castro Lima*/
+
+:root {
+  --vermelho: rgb(55, 83, 146);
+  --preto: #141414;
+} /*Variaveis */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preto);
+  font-family: "Arial";
+  color: white;
+}
+
+footer .container {
+  margin-top: 30px;
+  margin-bottom:15px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+footer .criador {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: auto;
+}
+
+footer li {
+  margin: 0px 6px;
+  color: #aaa;
+  font-size: 12px;
+  transition: 0.3s ease all;
+}
+
+footer li:hover {
+  color: #fff;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footter h3 {
+  color: #aaa;
+}
+
+
+
 
 @media screen and (max-width:700px){
 	header .container{
@@ -153,13 +215,3 @@ header nav a:hover{
 		width:30%;
 	}
 }
-
-
-
-
-
-
-
-
-
-
